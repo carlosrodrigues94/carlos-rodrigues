@@ -12,7 +12,7 @@ const Section: FC<{ children: React.ReactNode }> = ({ children }) => {
 
 export const Header = () => {
   return (
-    <header className="sticky top-2 w-full flex items-center justify-end">
+    <header className="sticky top-2 w-full z-10 flex items-center justify-end">
       <Section>
         <a
           href={USER_INFO.linkedIn}

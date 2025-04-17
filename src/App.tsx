@@ -13,7 +13,7 @@ export const App: React.FC = () => {
   const { data } = useSelector((state: RootState) => state.portfolio);
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <div className="container w-full mx-auto px-4 py-12">
+      <div className="w-full mx-auto px-4 py-12">
         <Header />
         <Title />
         <SectionAboutMe />

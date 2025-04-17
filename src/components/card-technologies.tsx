@@ -11,13 +11,17 @@ export const CardTechnologies: FC<{ technologies: Array<string> }> = ({
           flex
           flex-wrap
           rounded-md 
-          max-w-1/2
           border-1 
           items-center
           justify-center
-          p-4 text-sm 
-        border-gray-700 
-        bg-gray-800 
+          p-4 
+          text-sm 
+          border-gray-700 
+          bg-gray-800
+          max-md:max-w-full
+          max-md:max-h-60
+          max-md:flex-nowrap
+          max-md:w-full
       `}
     >
       {technologies.map((technology) => {

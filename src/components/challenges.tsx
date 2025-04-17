@@ -2,7 +2,7 @@ import { FC } from "react";
 
 export const SectionChallenges: FC = () => {
   return (
-    <section className="w-7xl m-20 ml-auto mr-auto border-0 p-2 rounded-sm">
+    <section className="w-7xl max-w-full m-20 ml-auto mr-auto border-0 p-2 rounded-sm text">
       <h2 className="ml-auto mr-auto text-2xl mb-8">Challenges</h2>
 
       <p>
