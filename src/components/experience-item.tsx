@@ -19,7 +19,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
         mb-6 
         max-sm:ml-0 
         max-sm:mr-0 
-        max-sm:w-96
+        max-sm:w-80
         
         ${isEven ? "ml-auto" : "ml-0"}
       `}
