@@ -9,12 +9,13 @@ export const CardTechnologiesContainer = () => {
       <h2 className="ml-auto mr-auto text-2xl mb-8">Technologies</h2>
       <div
         className={`
-        flex
-        w-full
-        justify-evenly
-        items-center
-        max-md:flex-col
-        max-md:justify-center
+          flex
+          w-full
+          justify-center
+          items-center
+          max-md:flex-col
+          max-md:justify-center
+
         `}
       >
         <CardTechnologies technologies={data.technologies} />
