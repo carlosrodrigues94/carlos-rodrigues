@@ -2,10 +2,15 @@ import { createReducer } from "@reduxjs/toolkit";
 import { PortfolioState } from "./types";
 import { actionSetPortfolioData } from "./actions";
 
+import rocketgostack from "@/assets/images/gostack.png";
+import fiap from "@/assets/images/fiap.png";
+import ignite from "@/assets/images/ignite.png";
+import efset from "@/assets/images/efset.png";
+
 const InitialState: PortfolioState = {
   data: {
     name: "Carlos Rodrigues",
-    title: "Software Engineer",
+    title: "SOFTWARE_ENGINEER",
 
     technologies: [
       "typescript",
@@ -39,8 +44,7 @@ const InitialState: PortfolioState = {
         company: "Debex Group",
         period: "2019-2021",
         title: "Full-Stack Developer",
-        description:
-          "Building and maintaining an ERP platform focused on helping Brazilian businesses reach more customers.",
+        description: "DEBEX_GROUP_EXPERIENCE",
         color: "#f1c40f",
       },
       {
@@ -48,8 +52,7 @@ const InitialState: PortfolioState = {
         company: "Wiser",
         period: "2021-2022",
         title: "Back-end Developer",
-        description:
-          "I was one of the people responsible for designing and implementing a payment gateway to migrate all of the company’s clients (over 300,000) to this new system.",
+        description: "WISER_EXPERIENCE",
         color: "#2ecc71",
       },
       {
@@ -57,8 +60,7 @@ const InitialState: PortfolioState = {
         company: "Rocket.Chat",
         period: "2022-2023",
         title: "Back-end Developer",
-        description:
-          "I worked on the main Rocket.Chat platform, making fixes and implementing improvements, including authentication and integration with other systems used by over 1 million clients worldwide.",
+        description: "ROCKET_CHAT_EXPERIENCE",
         color: "#F5455C",
       },
       {
@@ -66,8 +68,7 @@ const InitialState: PortfolioState = {
         company: "Ilia Digital",
         period: "2023-2023",
         title: "Back-end Developer",
-        description:
-          "I Worked allocated on a cryptocurrency assets company, working on legacy code migration and performance improvements.",
+        description: "ILIA_DIGITAL_EXPERIENCE",
         color: "#3498db",
       },
       {
@@ -75,9 +76,38 @@ const InitialState: PortfolioState = {
         company: "SysMap Solutions",
         period: "2023-Current",
         title: "Back-end Developer",
-        description:
-          "I’m currently working at Natura&Co, where I help design and set up environments and improve system performance for over 30 million clients.",
+        description: "SYSMAP_EXPERIENCE",
         color: "#f39c12",
+      },
+    ],
+    certifications: [
+      {
+        id: 1,
+        name: "RocketSeat GoStack",
+        year: 2019,
+        file: rocketgostack,
+        description: "CERTIFICATION_GO_STACK",
+      },
+      {
+        id: 2,
+        name: "RocketSeat Ignite",
+        year: 2021,
+        file: ignite,
+        description: "CERTIFICATION_IGNITE",
+      },
+      {
+        id: 3,
+        name: "FIAP Cloud Fundamentals, Administration and Solution Architect",
+        file: fiap,
+        year: 2021,
+        description: "CERTIFICATION_FIAP",
+      },
+      {
+        id: 4,
+        name: "EF SET",
+        year: 2023,
+        file: efset,
+        description: "CERTIFICATION_EF_SET",
       },
     ],
   },

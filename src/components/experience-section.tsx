@@ -1,17 +1,26 @@
+import { useMemo } from "react";
 import { Experience } from "../types";
 import { ExperienceItem } from "./experience-item";
+import { useINTL } from "../hooks/useINTL";
 
 interface ExperienceSectionProps {
   experiences: Experience[];
 }
 
-export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
-  experiences,
-}) => {
+export const ExperienceSection: React.FC<ExperienceSectionProps> = (props) => {
+  const { translate } = useINTL();
+
+  const experiences = useMemo(() => {
+    return props.experiences.map((item) => ({
+      ...item,
+      description: translate(item.description),
+    }));
+  }, [translate, props.experiences]);
+
   return (
     <div className="w-full py-8 ">
       <h2 className="text-3xl font-bold text-white text-center mb-12">
-        Experience
+        {translate("EXPERIENCE")}
       </h2>
 
       <div className="relative max-w-4xl mx-auto max-sm:flex max-sm:flex-col max-sm:items-center">

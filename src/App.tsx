@@ -8,6 +8,7 @@ import { RootState } from "./store/config";
 import { useSelector } from "react-redux";
 import { Header } from "./components/header";
 import { Certifications } from "./components/certifications";
+import "./intl/config";
 
 export const App: React.FC = () => {
   const { data } = useSelector((state: RootState) => state.portfolio);

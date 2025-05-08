@@ -1,3 +1,4 @@
+import getUnicodeFlagIcon from "country-flag-icons/unicode";
 import {
   SiReact,
   IconType,
@@ -114,4 +115,9 @@ export const IconsSocialMedia = {
   IconLinkedIn: FaLinkedin,
   IconGithub: FaGithub,
   IconMail: SiGmail,
+};
+
+export const IconsFlags = {
+  en_US: getUnicodeFlagIcon("US"),
+  pt_BR: getUnicodeFlagIcon("BR"),
 };

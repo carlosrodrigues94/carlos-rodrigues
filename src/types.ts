@@ -16,10 +16,19 @@ export interface Experience {
   color: string;
 }
 
+export interface Certification {
+  id: number;
+  name: string;
+  year: number;
+  file: string;
+  description: string;
+}
+
 export interface PortfolioData {
   name: string;
   title: string;
   skills: string[];
   technologies: string[];
   experiences: Experience[];
+  certifications: Certification[];
 }

@@ -1,6 +1,8 @@
 import { FC } from "react";
+import { useINTL } from "../hooks/useINTL";
 
 export const SectionAboutMe: FC = () => {
+  const { translate } = useINTL();
   return (
     <section
       className={`
@@ -25,13 +27,7 @@ export const SectionAboutMe: FC = () => {
         src="https://media.licdn.com/dms/image/v2/D4D03AQF8N2Zhot2h_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673460652756?e=1750291200&v=beta&t=Zr-YOk7vKsJEQqZR7CkgY9KntqjVDV97Xbk2ZFOLUDQ"
         alt=""
       />
-      <p>
-        Hi, I'm Carlos a passionate and experienced Software Engineer
-        specialized in building scalable, event-driven applications using
-        Node.js, NestJS, React, and AWS. I have a strong background in designing
-        robust backend systems, implementing clean architecture principles, and
-        delivering high-quality solutions for millions of users.
-      </p>
+      <p>{translate("WHO_AM_I")}</p>
     </section>
   );
 };
