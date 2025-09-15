@@ -5,6 +5,8 @@ export const pt_BR = {
   ROCKET_CHAT_EXPERIENCE: `Trabalhei na plataforma principal do Rocket.Chat, realizando correções e implementando melhorias, incluindo autenticação e integração com outros sistemas utilizados por mais de 1 milhão de clientes em todo o mundo.`,
   SYSMAP_EXPERIENCE: `Atualmente trabalho na Natura&Co, onde ajudo a desenhar e configurar ambientes, além de melhorar a performance de sistemas utilizados por mais de 30 milhões de clientes.`,
   WISER_EXPERIENCE: `Fui um dos responsáveis por projetar e implementar um gateway de pagamentos para migrar todos os clientes da empresa (mais de 300 mil) para esse novo sistema.`,
+  THE_STEPS_IO_EXPERIENCE:
+    "Atuo como desenvolvedor full stack implementando novas funcionalidades e melhorias em um sistema focado em auxiliar o processo de abertura de empresas nos Estados Unidos.",
   TECHNOLOGIES: "Tecnologias",
   CERTIFICATIONS: "Certificações",
   CHALLENGES: "Desafios",
